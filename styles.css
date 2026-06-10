@@ -1010,10 +1010,13 @@ h1 span {
 
 .phone {
   position: relative;
+  display: flex;
   width: 260px;
   min-height: 480px;
   padding: 50px 24px 25px;
   margin: 45px auto -95px;
+  align-items: center;
+  justify-content: center;
   color: #1d1d25;
   border: 7px solid #30313d;
   border-radius: 44px;
@@ -1048,6 +1051,13 @@ h1 span {
   font-family: var(--framer-font-family-bold);
   font-size: 57px;
   line-height: 1;
+}
+
+.phone .coming-soon {
+  max-width: 180px;
+  color: #6c65e7;
+  font-size: 34px;
+  line-height: 1.1;
 }
 
 .phone small {
