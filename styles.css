@@ -1667,6 +1667,10 @@ footer {
   font-size: 13px;
 }
 
+.legal-email {
+  font-weight: 600;
+}
+
 .footer-bottom {
   display: flex;
   padding-top: 22px;
