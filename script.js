@@ -270,6 +270,170 @@ const translations = {
     privacyLink: "Informacja o prywatności",
     footerTagline: "Rozwiązania cyfrowego wzrostu dla lokalnych firm w Polsce.",
     footerPrivacy: "Bez cookies śledzących i analityki."
+  },
+  tr: {
+    skip: "İçeriğe geç",
+    navLabel: "Ana navigasyon",
+    languageLabel: "Dil",
+    navProcess: "Süreç",
+    navServices: "Hizmetler",
+    navBenefits: "Avantajlar",
+    navPackages: "Paketler",
+    navFaq: "SSS",
+    heroEyebrow: "Polonya'da dijital büyüme ortağınız",
+    heroTitleLine1: "Yerel ilgiyi",
+    heroTitleLine2: "ölçülebilir büyümeye dönüştürün.",
+    heroCopy:
+      "Yerel işletmelerin bulunmasına, güven kazanmasına ve tercih edilmesine yardımcı olan web siteleri, reklam, analitik ve marka sistemleri.",
+    metaTitle: "Polonya'daki Yerel İşletmeler için Web Sitesi ve Google Ads | Zelta",
+    metaDescription:
+      "Zelta, Polonya'daki yerel işletmelere dönüşüm odaklı web siteleri, Google Ads, analitik, markalaşma ve sadakat uygulamaları sunar.",
+    menuOpen: "Menüyü aç",
+    menuClose: "Menüyü kapat",
+    heroCta: "Projenizi görüşelim",
+    heroSecondary: "Hizmetleri inceleyin",
+    trustLabel: "Kişisel ve çok dilli",
+    trustCopy: "Bizimle Türkçe, İngilizce veya Lehçe çalışın.",
+    processKicker: "Süreç",
+    processTitle: "Fikirden sonuca net bir yol",
+    processIntro:
+      "Karmaşık jargon yok. İş hedeflerinizi çalışan, ölçülebilir bir dijital sisteme dönüştüren üç odaklı adım.",
+    step1Title: "Dinliyor ve analiz ediyoruz",
+    step1Copy:
+      "En yüksek etkili fırsatları belirlemek için hedeflerinizi, müşterilerinizi ve mevcut kurulumunuzu inceliyoruz.",
+    step2Title: "Tasarlıyor ve geliştiriyoruz",
+    step2Copy:
+      "Web sitesini, kampanyaları ve takip sistemini birbirine bağlı tek bir büyüme sistemi olarak oluşturuyoruz.",
+    step3Title: "Yayına alıyor ve iyileştiriyoruz",
+    step3Copy:
+      "Dikkatli biçimde yayına alıyor, önemli verileri ölçüyor ve gerçek sonuçlara göre performansı geliştiriyoruz.",
+    servicesKicker: "Dijital merkeziniz",
+    servicesTitle: "Ziyaretleri görüşmelere dönüştüren web siteleri",
+    servicesIntro:
+      "Hızlı, mobil öncelikli ve yerel müşterilerin aradıklarını kolayca bulup harekete geçmeleri için tasarlanmış.",
+    service1Tag: "Temel",
+    service1Title: "Web sitesi tasarımı ve geliştirme",
+    service1Copy:
+      "İşletmenizin görünümüne ve gerçek müşteri yolculuğuna göre hazırlanmış dönüşüm odaklı web siteleri.",
+    service1Bullet1: "Strateji, içerik ve duyarlı tasarım",
+    service1Bullet2: "SEO uyumlu yapı ve performans",
+    service1Bullet3: "Güvenli yayın ve sürekli destek",
+    service2Tag: "Bulunun",
+    service2Title: "Google Ads ve kampanya kurulumu",
+    service2Copy:
+      "Satın almaya hazır müşterilere ulaşmak için odaklı kampanyalar, reklam grupları ve açılış sayfaları.",
+    service3Tag: "Neyin işe yaradığını bilin",
+    service3Title: "Analitik ve dönüşüm takibi",
+    service3Copy:
+      "Google Analytics ve Tag Manager kurulumu ile hangi görüşme, form ve kampanyaların sonuç ürettiğini görün.",
+    service4Tag: "Size özgü görünün",
+    service4Title: "Marka kimliği, renkler ve logo",
+    service4Copy:
+      "İşletmenizin güvenilir, tutarlı ve akılda kalıcı görünmesini sağlayan pratik bir görsel sistem.",
+    optional: "Opsiyonel ek hizmet",
+    service5Tag: "Müşterilerinizi yakın tutun",
+    service5Title: "Size özel sadakat mobil uygulaması",
+    service5Copy:
+      "Tekrar ziyaretleri, ödülleri ve doğrudan müşteri ilişkilerini destekleyen markalı bir sadakat uygulaması.",
+    benefitsKicker: "Neden Zelta",
+    benefitsTitle: "İş gerçeklerine dayanan dijital çözümler",
+    benefitsIntro:
+      "Netlik, hız ve ulaşılabilir destek üzerine kurulu; yerel işletmeler ve gerçek bütçeler için tasarlandı.",
+    benefit1Title: "Yerel pazar odağı",
+    benefit1Copy:
+      "Polonya'daki müşterilerin nasıl arama yaptığını, karşılaştırdığını ve yerel hizmetleri nasıl seçtiğini dikkate alıyoruz.",
+    benefit2Title: "Varsayılan olarak çok dilli",
+    benefit2Copy: "Türkçe, İngilizce veya Lehçe net iletişim.",
+    benefit3Title: "İlk günden ölçülebilir",
+    benefit3Copy:
+      "Önemli müşteri hareketlerini takip ediyoruz; böylece neyin çalıştığını ve bütçenizin nereye gittiğini bilirsiniz.",
+    benefit4Title: "Tek sorumlu iş ortağı",
+    benefit4Copy:
+      "Web sitesi, reklam, takip ve marka çalışmaları tek bir uyumlu sistem içinde yönetilir.",
+    benefit5Title: "Hızlı ve odaklı teslimat",
+    benefit5Copy:
+      "Gereksiz katmanlar olmadan, işinize katkı sağlayan temel unsurlara odaklanan çevik üretim.",
+    benefit6Title: "Gizlilik odaklı kurulum",
+    benefit6Copy:
+      "Veri minimizasyonu, güvenli barındırma ve izin gerektiren araçların bilinçli kullanımı baştan planlanır.",
+    packagesKicker: "Paketler",
+    packagesTitle: "Büyümenin her aşaması için basit paketler",
+    packagesIntro:
+      "Net teslimatlar, şeffaf başlangıç fiyatları ve işletmeniz için gerçekten gereken araçlar.",
+    oneTime: "tek seferlik",
+    maintenance: "aylık bakım",
+    getStarted: "Başlayın",
+    adsBudgetNote: "Reklam bütçesi müşteri tarafından doğrudan Google'a ödenir.",
+    package1Type: "Starter",
+    package1Title: "Profesyonel bir dijital temel",
+    package1Item1: "Açılış sayfası veya en fazla 5 sayfalık web sitesi",
+    package1Item2: "Özel SVG logo ve tüm kaynak dosyalar",
+    package1Item3: "Mobil uyumlu tasarım",
+    package1Item4: "Google Analytics kurulumu",
+    package1Item5: "Cloudflare üzerinde barındırma",
+    package1Item6: "1 revizyon turu",
+    package2Type: "Büyüme",
+    package2Title: "Potansiyel müşteri kazanımı için eksiksiz sistem",
+    package2Item1: "Starter paketindeki her şey",
+    package2Item2: "10 sayfaya kadar, blog veya portföy bölümü",
+    package2Item3: "Marka renkleri, yazı tipleri ve SVG varlıkları",
+    package2Item4: "Google Tag Manager ve dönüşüm takibi",
+    package2Item5: "Google Ads kampanya kurulumu",
+    package2Item6: "Yeniden markalama veya tasarım seçeneği",
+    package2Item7: "2 revizyon turu",
+    popular: "En çok tercih edilen",
+    customLabel: "Özel çözümler",
+    customTitle: "Daha gelişmiş bir çözüme mi ihtiyacınız var?",
+    customCopy:
+      "Web uygulamaları, gelişmiş işlevler, sürekli reklam yönetimi, raporlama ve sadakat uygulamaları ihtiyaçlarınıza göre fiyatlandırılır.",
+    customCta: "Özel çözümü görüşelim",
+    pricingNote:
+      "Fiyatlar başlangıç fiyatlarıdır. Nihai kapsam, geçerli vergi uygulaması ve bakım kapsamı işe başlamadan önce yazılı olarak onaylanır.",
+    faqKicker: "SSS",
+    faqTitle: "Sorularınıza net yanıtlar",
+    faqIntro: "Nereden başlayacağınızdan emin değilseniz, ilk görüşmede doğru kapsamı birlikte belirleriz.",
+    faq1Q: "Bir web sitesi ne kadar?",
+    faq1A:
+      "Starter paketimiz 250 € tek seferlik ücret ve aylık 50 € bakımdan başlar. Büyüme paketi 500 € tek seferlik ücret ve aylık 50 € bakımdan başlar. Özel işlevler ayrıca fiyatlandırılır.",
+    faq2Q: "Mevcut web sitemle çalışabilir misiniz?",
+    faq2A:
+      "Evet. Mevcut sitenizi, takibinizi ve marka yapınızı inceleyip iyileştirmenin mi yoksa yeniden geliştirmenin mi daha mantıklı olduğunu belirleyebiliriz.",
+    faq3Q: "Kurulumdan sonra Google Ads yönetiyor musunuz?",
+    faq3A:
+      "Evet. Kampanya kurulumu Büyüme paketine dahildir; sürekli yönetim ise iş hedeflerinize göre özel hizmet olarak sunulur. Reklam bütçesi doğrudan Google'a ödenir.",
+    faq4Q: "Takibim GDPR uyumlu olacak mı?",
+    faq4A:
+      "Veri minimizasyonu ve izin odaklı kurulumu temel alıyoruz. Nihai uyumluluk kullandığınız araçlara ve işletmenizin veri süreçlerine bağlıdır; gerektiğinde hukuk uzmanınızla koordinasyon kurarız.",
+    faq5Q: "Türkçe konuşuyor musunuz?",
+    faq5A:
+      "Evet. Projenizi Türkçe, İngilizce veya Lehçe yürütebilir; müşteri kitleniz için çok dilli içerik hazırlayabiliriz.",
+    contactKicker: "Görüşelim",
+    contactTitle: "Bir sonraki müşteriniz sizi zaten arıyor.",
+    contactIntro:
+      "İşletmenizin mevcut durumunu anlatın. Baskıcı satış olmadan, en mantıklı sonraki adımı birlikte belirleyelim.",
+    contactPoint1: "Ücretsiz ilk görüşme",
+    contactPoint2: "2 iş günü içinde yanıt",
+    contactPoint3: "Türkçe, İngilizce veya Lehçe",
+    formName: "Adınız",
+    formBusiness: "İşletme adı",
+    formEmail: "E-posta adresi",
+    formNeed: "En çok ne konuda yardımcı olabiliriz?",
+    formChoose: "Hizmet seçin",
+    formWebsite: "Web sitesi",
+    formAds: "Google Ads ve takip",
+    formBrand: "Marka kimliği",
+    formApp: "Sadakat uygulaması",
+    formStarter: "Starter paketi",
+    formGrowth: "Büyüme paketi",
+    formCustom: "Özel çözüm",
+    formUnsure: "Henüz emin değilim",
+    formMessage: "Hedefiniz hakkında birkaç cümle",
+    formSubmit: "E-posta uygulamasını aç ve talebi gönder",
+    formNote:
+      "Bu form e-posta uygulamanızı açar. Form içeriği bu web sitesi tarafından gönderilmez veya saklanmaz.",
+    privacyLink: "Gizlilik bildirimi",
+    footerTagline: "Polonya'daki yerel işletmeler için dijital büyüme çözümleri.",
+    footerPrivacy: "İzleme çerezi veya analitik yok."
   }
 };
 
@@ -298,7 +462,8 @@ function setLanguage(language) {
   ogDescriptionMeta?.setAttribute("content", dictionary.metaDescription);
   twitterTitleMeta?.setAttribute("content", dictionary.metaTitle);
   twitterDescriptionMeta?.setAttribute("content", dictionary.metaDescription);
-  ogLocaleMeta?.setAttribute("content", safeLanguage === "pl" ? "pl_PL" : "en_PL");
+  const localeByLanguage = { en: "en_PL", pl: "pl_PL", tr: "tr_TR" };
+  ogLocaleMeta?.setAttribute("content", localeByLanguage[safeLanguage]);
 
   translatedElements.forEach((element) => {
     const key = element.dataset.i18n;
@@ -383,19 +548,40 @@ contactForm.addEventListener("submit", (event) => {
   const business = cleanLine(formData.get("business"));
   const email = cleanLine(formData.get("email"));
   const selectedService = needSelect.options[needSelect.selectedIndex].textContent.trim();
-  const subject =
-    language === "pl"
-      ? `Zapytanie projektowe od ${business}`
-      : `Project enquiry from ${business}`;
-  const body = [
-    `${language === "pl" ? "Imię" : "Name"}: ${name}`,
-    `${language === "pl" ? "Firma" : "Business"}: ${business}`,
-    `Email: ${email}`,
-    `${language === "pl" ? "Usługa" : "Service"}: ${selectedService}`,
-    "",
-    `${language === "pl" ? "Cel" : "Goal"}:`,
-    formData.get("message")
-  ].join("\n");
+    const emailLabels = {
+      en: {
+        subject: "Project enquiry from",
+        name: "Name",
+        business: "Business",
+        service: "Service",
+        goal: "Goal"
+      },
+      pl: {
+        subject: "Zapytanie projektowe od",
+        name: "Imię",
+        business: "Firma",
+        service: "Usługa",
+        goal: "Cel"
+      },
+      tr: {
+        subject: "Proje talebi:",
+        name: "Ad",
+        business: "İşletme",
+        service: "Hizmet",
+        goal: "Hedef"
+      }
+    };
+    const labels = emailLabels[language] || emailLabels.en;
+    const subject = `${labels.subject} ${business}`;
+    const body = [
+      `${labels.name}: ${name}`,
+      `${labels.business}: ${business}`,
+      `Email: ${email}`,
+      `${labels.service}: ${selectedService}`,
+      "",
+      `${labels.goal}:`,
+      formData.get("message")
+    ].join("\n");
 
   window.location.href = `mailto:hello@zelta.digital?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
@@ -404,8 +590,7 @@ document.querySelector("#year").textContent = new Date().getFullYear();
 
 let storedLanguage = "en";
 try {
-  const browserLanguage = navigator.language?.toLowerCase().startsWith("pl") ? "pl" : "en";
-  storedLanguage = localStorage.getItem("zelta-language") || browserLanguage;
+  storedLanguage = localStorage.getItem("zelta-language") || "en";
 } catch {
   storedLanguage = "en";
 }
