@@ -75,7 +75,7 @@ const translations = {
     packagesTitle: "Simple plans for every stage of growth",
     packagesIntro: "Clear deliverables, predictable maintenance and no hidden platform fees.",
     oneTime: "one-time",
-    maintenance: "maintenance",
+    maintenance: "optional maintenance add-on",
     maintenancePrice: "+ 200 PLN/month",
     getStarted: "Get started",
     package1Cta: "Start for 999 PLN",
@@ -119,7 +119,7 @@ const translations = {
     faqTitle: "Questions, answered plainly",
     faqIntro: "Still unsure where to begin? A short conversation is usually enough to find the right first step.",
     faq1Q: "How much does a website cost?",
-    faq1A: "Starter begins at 999 PLN and Growth at 1,999 PLN. After an initial consultation, we confirm the final scope, timeline and price in writing before work starts.",
+    faq1A: "Starter begins at 999 PLN and Growth at 1,999 PLN. Optional maintenance is available for 200 PLN per month. We confirm the final scope, timeline and price in writing before work starts.",
     faq2Q: "Can you work with my existing website?",
     faq2A: "Yes. We can audit, improve or rebuild your current site depending on what will create the best return.",
     faq3Q: "Do you manage Google Ads after setup?",
@@ -151,7 +151,7 @@ const translations = {
     formSubmit: "Send enquiry",
     formSending: "Sending...",
     formSuccess: "Thank you. Your enquiry has been sent and we will reply within 2 business days.",
-    formError: "We could not send your enquiry. Please try again or email hello@zelta.digital.",
+    formError: "We could not send your enquiry. Please try again or email info@zelta.pl.",
     formNote: "Your enquiry is securely processed by Formspree so we can reply.",
     privacyLink: "Privacy notice",
     footerTagline: "Digital growth solutions for local businesses in Poland.",
@@ -233,7 +233,7 @@ const translations = {
     packagesTitle: "Proste pakiety na każdym etapie rozwoju",
     packagesIntro: "Jasny zakres, przewidywalne utrzymanie i bez ukrytych opłat platformowych.",
     oneTime: "jednorazowo",
-    maintenance: "utrzymanie",
+    maintenance: "opcjonalny dodatek utrzymaniowy",
     maintenancePrice: "+ 200 PLN/miesiąc",
     getStarted: "Zacznij teraz",
     package1Cta: "Zacznij od 999 PLN",
@@ -277,7 +277,7 @@ const translations = {
     faqTitle: "Proste odpowiedzi na ważne pytania",
     faqIntro: "Nie wiesz, od czego zacząć? Krótka rozmowa zwykle wystarczy, by znaleźć właściwy pierwszy krok.",
     faq1Q: "Ile kosztuje strona internetowa?",
-    faq1A: "Pakiet Starter zaczyna się od 999 PLN, a Wzrost od 1 999 PLN. Po konsultacji potwierdzamy pisemnie ostateczny zakres, termin i cenę przed rozpoczęciem prac.",
+    faq1A: "Pakiet Starter zaczyna się od 999 PLN, a Wzrost od 1 999 PLN. Opcjonalne utrzymanie kosztuje 200 PLN miesięcznie. Ostateczny zakres, termin i cenę potwierdzamy pisemnie przed rozpoczęciem prac.",
     faq2Q: "Czy możecie pracować na mojej obecnej stronie?",
     faq2A: "Tak. Możemy ją przeanalizować, ulepszyć lub przebudować, zależnie od tego, co przyniesie najlepszy efekt.",
     faq3Q: "Czy prowadzisz Google Ads po konfiguracji?",
@@ -309,7 +309,7 @@ const translations = {
     formSubmit: "Wyślij zapytanie",
     formSending: "Wysyłanie...",
     formSuccess: "Dziękujemy. Zapytanie zostało wysłane. Odpowiemy w ciągu 2 dni roboczych.",
-    formError: "Nie udało się wysłać zapytania. Spróbuj ponownie lub napisz na hello@zelta.digital.",
+    formError: "Nie udało się wysłać zapytania. Spróbuj ponownie lub napisz na info@zelta.pl.",
     formNote: "Zapytanie jest bezpiecznie przetwarzane przez Formspree, abyśmy mogli odpowiedzieć.",
     privacyLink: "Informacja o prywatności",
     footerTagline: "Rozwiązania cyfrowego wzrostu dla lokalnych firm w Polsce.",
@@ -410,7 +410,7 @@ const translations = {
     packagesIntro:
       "Net teslimatlar, şeffaf başlangıç fiyatları ve işletmeniz için gerçekten gereken araçlar.",
     oneTime: "tek seferlik",
-    maintenance: "aylık bakım",
+    maintenance: "isteğe bağlı bakım eklentisi",
     maintenancePrice: "+ aylık 200 PLN",
     getStarted: "Başlayın",
     package1Cta: "999 PLN ile başlayın",
@@ -457,7 +457,7 @@ const translations = {
     faqIntro: "Nereden başlayacağınızdan emin değilseniz, ilk görüşmede doğru kapsamı birlikte belirleriz.",
     faq1Q: "Bir web sitesi ne kadar?",
     faq1A:
-      "Starter paketi 999 PLN, Büyüme paketi ise 1.999 PLN'den başlar. İlk görüşmeden sonra nihai kapsamı, takvimi ve fiyatı işe başlamadan önce yazılı olarak onaylarız.",
+      "Starter paketi 999 PLN, Büyüme paketi ise 1.999 PLN'den başlar. İsteğe bağlı bakım aylık 200 PLN'dir. Nihai kapsamı, takvimi ve fiyatı işe başlamadan önce yazılı olarak onaylarız.",
     faq2Q: "Mevcut web sitemle çalışabilir misiniz?",
     faq2A:
       "Evet. Mevcut sitenizi, takibinizi ve marka yapınızı inceleyip iyileştirmenin mi yoksa yeniden geliştirmenin mi daha mantıklı olduğunu belirleyebiliriz.",
@@ -494,7 +494,7 @@ const translations = {
     formSubmit: "Talebi gönder",
     formSending: "Gönderiliyor...",
     formSuccess: "Teşekkürler. Talebiniz gönderildi. 2 iş günü içinde yanıt vereceğiz.",
-    formError: "Talebiniz gönderilemedi. Lütfen tekrar deneyin veya hello@zelta.digital adresine yazın.",
+    formError: "Talebiniz gönderilemedi. Lütfen tekrar deneyin veya info@zelta.pl adresine yazın.",
     formNote: "Talebiniz, yanıt verebilmemiz için Formspree tarafından güvenli biçimde işlenir.",
     privacyLink: "Gizlilik bildirimi",
     footerTagline: "Polonya'daki yerel işletmeler için dijital büyüme çözümleri.",
@@ -514,6 +514,7 @@ const languageField = contactForm.querySelector('input[name="language"]');
 const submitButton = contactForm.querySelector('button[type="submit"]');
 const submitLabel = submitButton.querySelector("[data-i18n]");
 const formStatus = contactForm.querySelector(".form-status");
+const samePageLinks = document.querySelectorAll('a[href^="#"]');
 const descriptionMeta = document.querySelector('meta[name="description"]');
 const ogTitleMeta = document.querySelector('meta[property="og:title"]');
 const ogDescriptionMeta = document.querySelector('meta[property="og:description"]');
@@ -590,6 +591,30 @@ navLinks.querySelectorAll("a").forEach((link) => {
   });
 });
 
+function cleanAddressBar() {
+  history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
+}
+
+samePageLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const target = document.querySelector(link.getAttribute("href"));
+    if (!target) return;
+
+    event.preventDefault();
+    target.scrollIntoView({
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+      block: "start"
+    });
+
+    if (link.classList.contains("skip-link")) {
+      target.setAttribute("tabindex", "-1");
+      target.focus({ preventScroll: true });
+    }
+
+    cleanAddressBar();
+  });
+});
+
 document.addEventListener("keydown", (event) => {
   if (event.key !== "Escape" || !navLinks.classList.contains("open")) return;
   navLinks.classList.remove("open");
@@ -662,3 +687,13 @@ try {
   storedLanguage = "en";
 }
 setLanguage(storedLanguage);
+
+if (window.location.hash) {
+  const initialTarget = document.querySelector(window.location.hash);
+  if (initialTarget) {
+    requestAnimationFrame(() => {
+      initialTarget.scrollIntoView({ block: "start" });
+      cleanAddressBar();
+    });
+  }
+}
