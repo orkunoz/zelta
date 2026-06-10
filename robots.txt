@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zelta.digital/sitemap.xml
+Sitemap: https://zelta.pl/sitemap.xml
