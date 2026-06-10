@@ -1,0 +1,17 @@
+{
+  "name": "Zelta Digital Growth Solutions",
+  "short_name": "Zelta",
+  "description": "Digital growth solutions for local businesses in Poland.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3f3f7",
+  "theme_color": "#6d65f7",
+  "icons": [
+    {
+      "src": "assets/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
