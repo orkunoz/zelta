@@ -1452,6 +1452,40 @@ h1 span {
   background: white;
 }
 
+.form-button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.form-honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.form-status {
+  min-height: 20px;
+  margin: -4px 0;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.form-status:empty {
+  display: none;
+}
+
+.form-status.success {
+  color: #8ce7bd;
+}
+
+.form-status.error {
+  color: #ffb4b4;
+}
+
 .form-note {
   margin: -3px 0 0;
   color: rgba(255, 255, 255, 0.4);

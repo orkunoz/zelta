@@ -129,8 +129,11 @@ const translations = {
     formCustom: "Custom solution",
     formUnsure: "Not sure yet",
     formMessage: "A few words about your goal",
-    formSubmit: "Open email to send enquiry",
-    formNote: "This form opens your email app. No form contents are sent to or stored by this website.",
+    formSubmit: "Send enquiry",
+    formSending: "Sending...",
+    formSuccess: "Thank you. Your enquiry has been sent and we will reply within 2 business days.",
+    formError: "We could not send your enquiry. Please try again or email hello@zelta.digital.",
+    formNote: "Your enquiry is securely processed by Formspree so we can reply.",
     privacyLink: "Privacy notice",
     footerTagline: "Digital growth solutions for local businesses in Poland.",
     footerPrivacy: "No tracking cookies or analytics."
@@ -265,8 +268,11 @@ const translations = {
     formCustom: "Rozwiązanie indywidualne",
     formUnsure: "Jeszcze nie wiem",
     formMessage: "Napisz kilka słów o swoim celu",
-    formSubmit: "Otwórz e-mail i wyślij zapytanie",
-    formNote: "Formularz otwiera Twoją aplikację pocztową. Treść formularza nie jest wysyłana ani zapisywana przez tę stronę.",
+    formSubmit: "Wyślij zapytanie",
+    formSending: "Wysyłanie...",
+    formSuccess: "Dziękujemy. Zapytanie zostało wysłane. Odpowiemy w ciągu 2 dni roboczych.",
+    formError: "Nie udało się wysłać zapytania. Spróbuj ponownie lub napisz na hello@zelta.digital.",
+    formNote: "Zapytanie jest bezpiecznie przetwarzane przez Formspree, abyśmy mogli odpowiedzieć.",
     privacyLink: "Informacja o prywatności",
     footerTagline: "Rozwiązania cyfrowego wzrostu dla lokalnych firm w Polsce.",
     footerPrivacy: "Bez cookies śledzących i analityki."
@@ -428,9 +434,11 @@ const translations = {
     formCustom: "Özel çözüm",
     formUnsure: "Henüz emin değilim",
     formMessage: "Hedefiniz hakkında birkaç cümle",
-    formSubmit: "E-posta uygulamasını aç ve talebi gönder",
-    formNote:
-      "Bu form e-posta uygulamanızı açar. Form içeriği bu web sitesi tarafından gönderilmez veya saklanmaz.",
+    formSubmit: "Talebi gönder",
+    formSending: "Gönderiliyor...",
+    formSuccess: "Teşekkürler. Talebiniz gönderildi. 2 iş günü içinde yanıt vereceğiz.",
+    formError: "Talebiniz gönderilemedi. Lütfen tekrar deneyin veya hello@zelta.digital adresine yazın.",
+    formNote: "Talebiniz, yanıt verebilmemiz için Formspree tarafından güvenli biçimde işlenir.",
     privacyLink: "Gizlilik bildirimi",
     footerTagline: "Polonya'daki yerel işletmeler için dijital büyüme çözümleri.",
     footerPrivacy: "İzleme çerezi veya analitik yok."
@@ -445,6 +453,10 @@ const navLinks = document.querySelector(".nav-links");
 const contactForm = document.querySelector("#contact-form");
 const inquiryLinks = document.querySelectorAll("[data-inquiry]");
 const needSelect = contactForm.querySelector('select[name="need"]');
+const languageField = contactForm.querySelector('input[name="language"]');
+const submitButton = contactForm.querySelector('button[type="submit"]');
+const submitLabel = submitButton.querySelector("[data-i18n]");
+const formStatus = contactForm.querySelector(".form-status");
 const descriptionMeta = document.querySelector('meta[name="description"]');
 const ogTitleMeta = document.querySelector('meta[property="og:title"]');
 const ogDescriptionMeta = document.querySelector('meta[property="og:description"]');
@@ -487,6 +499,12 @@ function setLanguage(language) {
 
   const isMenuOpen = navLinks.classList.contains("open");
   menuButton.setAttribute("aria-label", isMenuOpen ? dictionary.menuClose : dictionary.menuOpen);
+  languageField.value = safeLanguage;
+  if (formStatus.classList.contains("success")) {
+    formStatus.textContent = dictionary.formSuccess;
+  } else if (formStatus.classList.contains("error")) {
+    formStatus.textContent = dictionary.formError;
+  }
 
   try {
     localStorage.setItem("zelta-language", safeLanguage);
@@ -537,53 +555,45 @@ inquiryLinks.forEach((link) => {
   });
 });
 
-contactForm.addEventListener("submit", (event) => {
+contactForm.addEventListener("submit", async (event) => {
   event.preventDefault();
   if (!contactForm.reportValidity()) return;
 
-  const formData = new FormData(contactForm);
   const language = document.documentElement.lang;
-  const cleanLine = (value) => String(value).replace(/[\r\n]+/g, " ").trim();
-  const name = cleanLine(formData.get("name"));
-  const business = cleanLine(formData.get("business"));
-  const email = cleanLine(formData.get("email"));
-  const selectedService = needSelect.options[needSelect.selectedIndex].textContent.trim();
-    const emailLabels = {
-      en: {
-        subject: "Project enquiry from",
-        name: "Name",
-        business: "Business",
-        service: "Service",
-        goal: "Goal"
-      },
-      pl: {
-        subject: "Zapytanie projektowe od",
-        name: "Imię",
-        business: "Firma",
-        service: "Usługa",
-        goal: "Cel"
-      },
-      tr: {
-        subject: "Proje talebi:",
-        name: "Ad",
-        business: "İşletme",
-        service: "Hizmet",
-        goal: "Hedef"
-      }
-    };
-    const labels = emailLabels[language] || emailLabels.en;
-    const subject = `${labels.subject} ${business}`;
-    const body = [
-      `${labels.name}: ${name}`,
-      `${labels.business}: ${business}`,
-      `Email: ${email}`,
-      `${labels.service}: ${selectedService}`,
-      "",
-      `${labels.goal}:`,
-      formData.get("message")
-    ].join("\n");
+  const dictionary = translations[language] || translations.en;
+  const formData = new FormData(contactForm);
 
-  window.location.href = `mailto:hello@zelta.digital?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  submitButton.disabled = true;
+  submitButton.setAttribute("aria-busy", "true");
+  submitLabel.textContent = dictionary.formSending;
+  formStatus.className = "form-status full-field";
+  formStatus.textContent = "";
+
+  try {
+    const response = await fetch(contactForm.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json"
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error(`Form submission failed with status ${response.status}`);
+    }
+
+    contactForm.reset();
+    languageField.value = language;
+    formStatus.classList.add("success");
+    formStatus.textContent = dictionary.formSuccess;
+  } catch {
+    formStatus.classList.add("error");
+    formStatus.textContent = dictionary.formError;
+  } finally {
+    submitButton.disabled = false;
+    submitButton.removeAttribute("aria-busy");
+    submitLabel.textContent = dictionary.formSubmit;
+  }
 });
 
 document.querySelector("#year").textContent = new Date().getFullYear();
