@@ -236,11 +236,11 @@ const translations = {
     maintenancePrice: "+ 200 PLN/miesiąc",
     getStarted: "Zacznij teraz",
     package1Cta: "Zacznij od 999 PLN",
-    package2Cta: "Zacznij od 1 999 PLN",
+    package2Cta: "Zacznij od 1,999 PLN",
     adsBudgetNote: "Budżet reklamowy klient opłaca bezpośrednio w Google.",
     package1Type: "Podstawowy",
     package1Price: "999 PLN",
-    package1OriginalPrice: "2 000 PLN",
+    package1OriginalPrice: "2,000 PLN",
     package1Discount: "Oferta startowa",
     package1Title: "Profesjonalny fundament cyfrowy",
     package1Item1: "Landing page lub strona do 5 podstron",
@@ -250,8 +250,8 @@ const translations = {
     package1Item5: "Hosting w Cloudflare",
     package1Item6: "1 runda poprawek",
     package2Type: "Premium",
-    package2Price: "1 999 PLN",
-    package2OriginalPrice: "3 000 PLN",
+    package2Price: "1,999 PLN",
+    package2OriginalPrice: "3,000 PLN",
     package2Discount: "Oferta startowa",
     package2Title: "Kompletny system pozyskiwania leadów",
     package2Item1: "Wszystko z pakietu Podstawowego",
@@ -279,7 +279,7 @@ const translations = {
     faqTitle: "Proste odpowiedzi na ważne pytania",
     faqIntro: "Nie wiesz, od czego zacząć? Krótka rozmowa zwykle wystarczy, by znaleźć właściwy pierwszy krok.",
     faq1Q: "Ile kosztuje strona internetowa?",
-    faq1A: "Pakiet Podstawowy kosztuje obecnie 999 PLN, a Premium 1 999 PLN. Opcjonalne utrzymanie kosztuje 200 PLN miesięcznie. Ostateczny zakres, termin i cenę potwierdzamy pisemnie przed rozpoczęciem prac.",
+    faq1A: "Pakiet Podstawowy kosztuje obecnie 999 PLN, a Premium 1,999 PLN. Opcjonalne utrzymanie kosztuje 200 PLN miesięcznie. Ostateczny zakres, termin i cenę potwierdzamy pisemnie przed rozpoczęciem prac.",
     faq2Q: "Czy możecie pracować na mojej obecnej stronie?",
     faq2A: "Tak. Możemy ją przeanalizować, ulepszyć lub przebudować, zależnie od tego, co przyniesie najlepszy efekt.",
     faq3Q: "Czy prowadzisz Google Ads po konfiguracji?",
@@ -413,11 +413,11 @@ const translations = {
     maintenancePrice: "+ aylık 200 PLN",
     getStarted: "Başlayın",
     package1Cta: "999 PLN ile başlayın",
-    package2Cta: "1.999 PLN ile başlayın",
+    package2Cta: "1,999 PLN ile başlayın",
     adsBudgetNote: "Reklam bütçesi müşteri tarafından doğrudan Google'a ödenir.",
     package1Type: "Temel",
     package1Price: "999 PLN",
-    package1OriginalPrice: "2.000 PLN",
+    package1OriginalPrice: "2,000 PLN",
     package1Discount: "Lansman teklifi",
     package1Title: "Profesyonel bir dijital temel",
     package1Item1: "Açılış sayfası veya en fazla 5 sayfalık web sitesi",
@@ -427,8 +427,8 @@ const translations = {
     package1Item5: "Cloudflare üzerinde barındırma",
     package1Item6: "1 revizyon turu",
     package2Type: "Premium",
-    package2Price: "1.999 PLN",
-    package2OriginalPrice: "3.000 PLN",
+    package2Price: "1,999 PLN",
+    package2OriginalPrice: "3,000 PLN",
     package2Discount: "Lansman teklifi",
     package2Title: "Potansiyel müşteri kazanımı için eksiksiz sistem",
     package2Item1: "Temel paketindeki her şey",
@@ -459,7 +459,7 @@ const translations = {
     faqIntro: "Nereden başlayacağınızdan emin değilseniz, ilk görüşmede doğru kapsamı birlikte belirleriz.",
     faq1Q: "Bir web sitesi ne kadar?",
     faq1A:
-      "Temel paket şu anda 999 PLN, Premium paket ise 1.999 PLN'dir. İsteğe bağlı bakım aylık 200 PLN'dir. Nihai kapsamı, takvimi ve fiyatı işe başlamadan önce yazılı olarak onaylarız.",
+      "Temel paket şu anda 999 PLN, Premium paket ise 1,999 PLN'dir. İsteğe bağlı bakım aylık 200 PLN'dir. Nihai kapsamı, takvimi ve fiyatı işe başlamadan önce yazılı olarak onaylarız.",
     faq2Q: "Mevcut web sitemle çalışabilir misiniz?",
     faq2A:
       "Evet. Mevcut sitenizi, takibinizi ve marka yapınızı inceleyip iyileştirmenin mi yoksa yeniden geliştirmenin mi daha mantıklı olduğunu belirleyebiliriz.",
@@ -522,7 +522,6 @@ const ogTitleMeta = document.querySelector('meta[property="og:title"]');
 const ogDescriptionMeta = document.querySelector('meta[property="og:description"]');
 const twitterTitleMeta = document.querySelector('meta[name="twitter:title"]');
 const twitterDescriptionMeta = document.querySelector('meta[name="twitter:description"]');
-const ogLocaleMeta = document.querySelector('meta[property="og:locale"]');
 
 function setLanguage(language) {
   const safeLanguage = translations[language] ? language : "en";
@@ -534,8 +533,6 @@ function setLanguage(language) {
   ogDescriptionMeta?.setAttribute("content", dictionary.metaDescription);
   twitterTitleMeta?.setAttribute("content", dictionary.metaTitle);
   twitterDescriptionMeta?.setAttribute("content", dictionary.metaDescription);
-  const localeByLanguage = { en: "en_PL", pl: "pl_PL", tr: "tr_TR" };
-  ogLocaleMeta?.setAttribute("content", localeByLanguage[safeLanguage]);
 
   translatedElements.forEach((element) => {
     const key = element.dataset.i18n;
