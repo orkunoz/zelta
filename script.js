@@ -108,7 +108,6 @@ const translations = {
     customCopy: "Web apps, loyalty programs, ongoing Google Ads management and strategic growth support are scoped after a consultation.",
     customCta: "Discuss a custom solution",
     pricingNote: "Prices are starting prices. Final scope, applicable tax treatment and maintenance coverage are confirmed in writing before work starts.",
-    founderPhotoNote: "Founder-led digital studio",
     founderKicker: "Behind Zelta",
     founderTitle: "Hi, I’m the person behind Zelta.",
     founderCopy:
@@ -268,7 +267,6 @@ const translations = {
     customCopy: "Aplikacje webowe, programy lojalnościowe, stałe prowadzenie Google Ads i strategiczne wsparcie rozwoju wyceniamy po konsultacji.",
     customCta: "Omów indywidualne rozwiązanie",
     pricingNote: "Podane ceny są cenami początkowymi. Ostateczny zakres, sposób rozliczenia podatku i zakres utrzymania potwierdzamy pisemnie przed rozpoczęciem prac.",
-    founderPhotoNote: "Studio prowadzone przez założyciela",
     founderKicker: "Kto stoi za Zelta",
     founderTitle: "Cześć, to ja stoję za Zelta.",
     founderCopy:
@@ -448,7 +446,6 @@ const translations = {
     customCta: "Özel çözümü görüşelim",
     pricingNote:
       "Fiyatlar başlangıç fiyatlarıdır. Nihai kapsam, geçerli vergi uygulaması ve bakım kapsamı işe başlamadan önce yazılı olarak onaylanır.",
-    founderPhotoNote: "Kurucusu tarafından yönetilen dijital stüdyo",
     founderKicker: "Zelta'nın arkasında kim var?",
     founderTitle: "Merhaba, Zelta'nın arkasındaki kişiyim.",
     founderCopy:
