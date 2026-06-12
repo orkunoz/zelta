@@ -331,9 +331,13 @@ h3 {
 h1 {
   max-width: 920px;
   margin: 34px auto 24px;
-  font-size: clamp(50px, 7vw, 82px);
+  font-size: 3.3em;
   line-height: 1.03;
   font-weight: var(--framer-font-weight);
+}
+
+h2 {
+  font-size: 2.3em;
 }
 
 h1 span {
@@ -568,7 +572,7 @@ h1 span {
 
 .section-heading h2 {
   margin-bottom: 18px;
-  font-size: clamp(38px, 5vw, 58px);
+  font-size: 2.3em;
   line-height: 1.08;
 }
 
@@ -1260,18 +1264,6 @@ h1 span {
   font-weight: 600;
 }
 
-.maintenance {
-  margin: 12px 0 0;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.4;
-}
-
-.maintenance b {
-  color: var(--ink);
-  font-weight: 600;
-}
-
 .package-card .package-features {
   display: grid;
   padding: 24px 0 30px;
@@ -1347,6 +1339,26 @@ h1 span {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+.maintenance-notice {
+  display: flex;
+  max-width: 860px;
+  padding: 18px 22px;
+  margin: 28px auto 0;
+  gap: 12px 24px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(109, 101, 247, 0.2);
+  border-radius: 16px;
+  background: #f8f7ff;
+  color: var(--muted);
+  text-align: center;
+  font-size: 13px;
+}
+
+.maintenance-notice strong {
+  color: var(--purple-dark);
 }
 
 .custom-solutions {
@@ -1436,7 +1448,7 @@ h1 span {
   max-width: 650px;
   margin: 18px 0;
   color: var(--ink);
-  font-size: clamp(32px, 4.6vw, 58px);
+  font-size: 2.3em;
   line-height: 1.03;
 }
 
@@ -1530,7 +1542,7 @@ h1 span {
 
 .contact-copy h2 {
   margin-bottom: 25px;
-  font-size: clamp(42px, 5vw, 63px);
+  font-size: 2.3em;
   line-height: 1.07;
 }
 
@@ -1559,8 +1571,7 @@ h1 span {
 }
 
 .contact-form input,
-.contact-form textarea,
-.contact-form select {
+.contact-form textarea {
   width: 100%;
   padding: 14px 16px;
   color: white;
@@ -1570,13 +1581,8 @@ h1 span {
   background: rgba(255, 255, 255, 0.07);
 }
 
-.contact-form select option {
-  color: var(--ink);
-}
-
 .contact-form input:focus,
-.contact-form textarea:focus,
-.contact-form select:focus {
+.contact-form textarea:focus {
   border-color: #8d91fa;
   box-shadow: 0 0 0 3px rgba(118, 119, 243, 0.18);
 }
@@ -1843,6 +1849,11 @@ footer {
     flex-direction: column;
   }
 
+  .maintenance-notice {
+    align-items: center;
+    flex-direction: column;
+  }
+
   .custom-solutions-button {
     width: 100%;
   }
@@ -1946,7 +1957,7 @@ footer {
 
   h1 {
     margin-top: 28px;
-    font-size: 45px;
+    font-size: 3.3em;
   }
 
   .hero-copy {
@@ -1990,10 +2001,6 @@ footer {
 
   .section-heading {
     margin-bottom: 38px;
-  }
-
-  .section-heading h2 {
-    font-size: 38px;
   }
 
   .process-card {
@@ -2058,10 +2065,6 @@ footer {
 
   .contact-section {
     padding: 85px 0;
-  }
-
-  .contact-copy h2 {
-    font-size: 39px;
   }
 
   .benefit-grid {
@@ -2169,7 +2172,7 @@ footer {
 
 .legal-language-title {
   margin-bottom: 12px;
-  font-size: clamp(34px, 5vw, 48px);
+  font-size: 2.3em;
   line-height: 1.15;
 }
 
@@ -2186,7 +2189,7 @@ footer {
 
 .legal-content h2 {
   margin-bottom: 12px;
-  font-size: 23px;
+  font-size: 2.3em;
 }
 
 .legal-content section p {
