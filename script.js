@@ -108,10 +108,6 @@ const translations = {
     founderTitle: "The person behind Zelta",
     founderCopy:
       "Hi, I'm Orkun. I build and manage every project myself — from strategy to execution. No outsourcing, no account managers, no middlemen. Just direct work with the person actually building your site, running your ads, and setting up your tracking.",
-    founderPoint1: "Direct communication",
-    founderPoint2: "No agency hand-offs",
-    founderPoint3: "English, Polish and Turkish",
-    founderCta: "Tell us about your business",
     faqKicker: "FAQ",
     faqTitle: "Questions, answered plainly",
     faqIntro: "Still unsure where to begin? A short conversation is usually enough to find the right first step.",
@@ -253,10 +249,6 @@ const translations = {
     founderTitle: "Osoba stojąca za Zelta",
     founderCopy:
       "Cześć, jestem Orkun. Każdy projekt buduję i prowadzę samodzielnie — od strategii po realizację. Bez outsourcingu, opiekunów konta i pośredników. Pracujesz bezpośrednio z osobą, która tworzy Twoją stronę, prowadzi reklamy i konfiguruje pomiar.",
-    founderPoint1: "Bezpośrednia komunikacja",
-    founderPoint2: "Bez przekazywania między działami",
-    founderPoint3: "Polski, angielski i turecki",
-    founderCta: "Opowiedz nam o swojej firmie",
     faqKicker: "FAQ",
     faqTitle: "Proste odpowiedzi na ważne pytania",
     faqIntro: "Nie wiesz, od czego zacząć? Krótka rozmowa zwykle wystarczy, by znaleźć właściwy pierwszy krok.",
@@ -418,10 +410,6 @@ const translations = {
     founderTitle: "Zelta'nın arkasındaki kişi",
     founderCopy:
       "Merhaba, ben Orkun. Her projeyi stratejiden uygulamaya kadar kendim kurup yönetiyorum. Dış kaynak, müşteri temsilcisi veya aracı yok. Sitenizi kuran, reklamlarınızı yöneten ve ölçüm sisteminizi hazırlayan kişiyle doğrudan çalışırsınız.",
-    founderPoint1: "Doğrudan iletişim",
-    founderPoint2: "Ajans içi devir yok",
-    founderPoint3: "Türkçe, İngilizce ve Lehçe",
-    founderCta: "İşletmenizi bize anlatın",
     faqKicker: "SSS",
     faqTitle: "Sorularınıza net yanıtlar",
     faqIntro: "Nereden başlayacağınızdan emin değilseniz, ilk görüşmede doğru kapsamı birlikte belirleriz.",
