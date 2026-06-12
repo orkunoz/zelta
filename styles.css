@@ -857,30 +857,6 @@ h1 span {
   font-size: 6px;
 }
 
-.service-icon {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  margin-bottom: 28px;
-  color: white;
-  border-radius: 16px;
-  place-items: center;
-  background: var(--purple);
-  box-shadow: 0 10px 23px rgba(94, 81, 221, 0.24);
-  font-size: 18px;
-  font-weight: var(--framer-font-weight-bold);
-}
-
-.google-icon {
-  color: #4285f4;
-  background: white;
-}
-
-.analytics-icon {
-  color: #f4a640;
-  background: #fff8e9;
-}
-
 .metric-visual {
   position: static;
   width: 100%;
@@ -979,43 +955,6 @@ h1 span {
   background: linear-gradient(145deg, #a79bff, #7df0c0);
   background-clip: text;
   -webkit-background-clip: text;
-}
-
-.brand-visual > span {
-  position: absolute;
-  right: 18px;
-  bottom: 14px;
-  color: rgba(255, 255, 255, 0.38);
-  font-size: 8px;
-  letter-spacing: 0.12em;
-}
-
-.swatches {
-  position: absolute;
-  bottom: 18px;
-  left: 18px;
-  display: flex;
-}
-
-.swatches i {
-  width: 23px;
-  height: 23px;
-  margin-right: -4px;
-  border: 2px solid #171823;
-  border-radius: 50%;
-  background: #6f64ee;
-}
-
-.swatches i:nth-child(2) {
-  background: #86a2ff;
-}
-
-.swatches i:nth-child(3) {
-  background: #9ce5c1;
-}
-
-.swatches i:nth-child(4) {
-  background: #f6f5f1;
 }
 
 .loyalty-card {
@@ -1877,10 +1816,6 @@ footer {
   .loyalty-card {
     min-height: 245px;
     max-height: none;
-  }
-
-  .service-icon {
-    margin-bottom: 24px;
   }
 
   .metric-visual,
