@@ -116,9 +116,7 @@ const translations = {
     portfolioStat2Label: "campaign setup",
     portfolioStat3Value: "Calls & forms",
     portfolioStat3Label: "conversion tracking",
-    portfolioLiveImageLabel: "Live project website screenshot coming soon",
-    portfolioLiveImageEyebrow: "Real project",
-    portfolioLiveImageText: "Website screenshot coming soon",
+    portfolioLiveImageAlt: "Responsive website, services and calculator screens created for a local service business",
     portfolioConceptBadge: "Concept",
     portfolioMockupSoon: "Mockup coming soon",
     portfolioConcept1ImageLabel: "Barber shop website mockup coming soon",
@@ -284,9 +282,7 @@ const translations = {
     portfolioStat2Label: "konfiguracja kampanii",
     portfolioStat3Value: "Połączenia i formularze",
     portfolioStat3Label: "pomiar konwersji",
-    portfolioLiveImageLabel: "Zrzut ekranu strony zrealizowanego projektu pojawi się wkrótce",
-    portfolioLiveImageEyebrow: "Prawdziwy projekt",
-    portfolioLiveImageText: "Zrzut ekranu strony już wkrótce",
+    portfolioLiveImageAlt: "Responsywna strona, oferta usług i kalkulator wykonane dla lokalnej firmy usługowej",
     portfolioConceptBadge: "Koncepcja",
     portfolioMockupSoon: "Makieta już wkrótce",
     portfolioConcept1ImageLabel: "Makieta strony barbershopu pojawi się wkrótce",
@@ -472,9 +468,7 @@ const translations = {
     portfolioStat2Label: "kampanya kurulumu",
     portfolioStat3Value: "Aramalar ve formlar",
     portfolioStat3Label: "dönüşüm takibi",
-    portfolioLiveImageLabel: "Canlı proje web sitesi ekran görüntüsü yakında eklenecek",
-    portfolioLiveImageEyebrow: "Gerçek proje",
-    portfolioLiveImageText: "Web sitesi ekran görüntüsü yakında",
+    portfolioLiveImageAlt: "Yerel bir hizmet işletmesi için hazırlanan responsive web sitesi, hizmetler ve hesaplama ekranları",
     portfolioConceptBadge: "Konsept",
     portfolioMockupSoon: "Mockup yakında",
     portfolioConcept1ImageLabel: "Berber web sitesi mockup'ı yakında eklenecek",
@@ -534,6 +528,7 @@ const translations = {
 const languageButtons = document.querySelectorAll(".lang-btn");
 const translatedElements = document.querySelectorAll("[data-i18n]");
 const translatedAriaElements = document.querySelectorAll("[data-i18n-aria-label]");
+const translatedAltElements = document.querySelectorAll("[data-i18n-alt]");
 const menuButton = document.querySelector(".menu-button");
 const navLinks = document.querySelector(".nav-links");
 const contactForm = document.querySelector("#contact-form");
@@ -572,6 +567,13 @@ function setLanguage(language) {
     const key = element.dataset.i18nAriaLabel;
     if (dictionary[key]) {
       element.setAttribute("aria-label", dictionary[key]);
+    }
+  });
+
+  translatedAltElements.forEach((element) => {
+    const key = element.dataset.i18nAlt;
+    if (dictionary[key]) {
+      element.setAttribute("alt", dictionary[key]);
     }
   });
 
