@@ -1177,7 +1177,7 @@ h1 span {
 .package-price {
   display: flex;
   gap: 8px;
-  align-items: baseline;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -1190,6 +1190,8 @@ h1 span {
 }
 
 .package-price span {
+  display: inline-flex;
+  align-items: center;
   padding: 5px 9px;
   color: #3f775d;
   border: 1px solid #b9dfca;
@@ -1197,6 +1199,7 @@ h1 span {
   background: #e7f7ee;
   font-size: 10px;
   font-weight: 600;
+  line-height: 1.2;
 }
 
 .package-card .package-features {
@@ -1598,7 +1601,13 @@ footer {
 }
 
 .legal-email {
+  display: inline-flex;
+  align-items: baseline;
   font-weight: 600;
+}
+
+.email-at::before {
+  content: "@";
 }
 
 .footer-bottom {
