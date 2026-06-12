@@ -1440,7 +1440,7 @@ h1 span {
 .portfolio-stats strong {
   margin-bottom: 5px;
   color: var(--ink);
-  font-size: 13px;
+  font-size: 20px;
   line-height: 1.25;
 }
 
@@ -1448,6 +1448,13 @@ h1 span {
   color: var(--muted);
   font-size: 10px;
   line-height: 1.4;
+}
+
+.portfolio-data-note {
+  margin: 12px 0 0;
+  color: #7a7a87;
+  font-size: 9px;
+  line-height: 1.5;
 }
 
 .portfolio-live-visual {
