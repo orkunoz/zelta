@@ -494,44 +494,6 @@ h1 span {
   font-weight: 600;
 }
 
-.hero-orbit {
-  position: absolute;
-  display: flex;
-  padding: 9px 14px 9px 9px;
-  gap: 9px;
-  align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.62);
-  box-shadow: var(--soft-shadow);
-  font-size: 12px;
-  font-weight: 600;
-  animation: float 5s ease-in-out infinite;
-}
-
-.orbit-left {
-  top: 370px;
-  left: 2%;
-  transform: rotate(-8deg);
-}
-
-.orbit-right {
-  top: 505px;
-  right: 1%;
-  transform: rotate(7deg);
-  animation-delay: -2s;
-}
-
-.orbit-icon {
-  display: grid;
-  width: 31px;
-  height: 31px;
-  color: white;
-  border-radius: 50%;
-  place-items: center;
-  background: var(--purple);
-}
-
 .section {
   padding-top: 82px;
   padding-bottom: 82px;
@@ -1620,14 +1582,6 @@ h1 span {
   line-height: 1.8;
 }
 
-.founder-copy .founder-languages {
-  margin-top: 16px;
-  color: var(--purple-dark);
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1.6;
-}
-
 .faq-list {
   border-top: 1px solid var(--line);
 }
@@ -1880,21 +1834,7 @@ footer {
   }
 }
 
-@keyframes float {
-  0%,
-  100% {
-    translate: 0 0;
-  }
-  50% {
-    translate: 0 -10px;
-  }
-}
-
 @media (max-width: 1000px) {
-  .hero-orbit {
-    display: none;
-  }
-
   .nav {
     width: min(860px, calc(100% - 28px));
   }
