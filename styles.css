@@ -732,21 +732,6 @@ h1 span {
   line-height: 1.55;
 }
 
-.service-cta {
-  display: inline-flex;
-  width: fit-content;
-  margin-top: 18px;
-  color: var(--purple-dark);
-  border-bottom: 1px solid rgba(84, 75, 220, 0.35);
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.service-cta:hover,
-.service-cta:focus-visible {
-  border-color: var(--purple-dark);
-}
-
 .service-card ul,
 .package-card ul {
   padding: 0;
@@ -1373,7 +1358,7 @@ h1 span {
 .portfolio-featured {
   display: grid;
   padding: 24px;
-  grid-template-columns: minmax(0, 0.95fr) minmax(380px, 1.05fr);
+  grid-template-columns: minmax(0, 0.72fr) minmax(440px, 1.28fr);
   gap: 34px;
   align-items: stretch;
   border: 1px solid rgba(109, 101, 247, 0.18);
@@ -1409,18 +1394,9 @@ h1 span {
   background: #fff;
 }
 
-.portfolio-category {
-  margin: 24px 0 8px;
-  color: var(--purple-dark);
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
 .portfolio-featured h3 {
   max-width: 520px;
-  margin-bottom: 14px;
+  margin: 24px 0 14px;
   font-size: 29px;
   line-height: 1.18;
 }
@@ -1463,13 +1439,6 @@ h1 span {
   color: var(--muted);
   font-size: 10px;
   line-height: 1.4;
-}
-
-.portfolio-data-note {
-  margin: 12px 0 0;
-  color: #7a7a87;
-  font-size: 9px;
-  line-height: 1.5;
 }
 
 .portfolio-live-visual {
