@@ -732,6 +732,21 @@ h1 span {
   line-height: 1.55;
 }
 
+.service-cta {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 18px;
+  color: var(--purple-dark);
+  border-bottom: 1px solid rgba(84, 75, 220, 0.35);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.service-cta:hover,
+.service-cta:focus-visible {
+  border-color: var(--purple-dark);
+}
+
 .service-card ul,
 .package-card ul {
   padding: 0;
@@ -1636,6 +1651,14 @@ h1 span {
   line-height: 1.8;
 }
 
+.founder-copy .founder-languages {
+  margin-top: 16px;
+  color: var(--purple-dark);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
 .faq-list {
   border-top: 1px solid var(--line);
 }
@@ -1840,13 +1863,9 @@ footer {
 }
 
 .legal-email {
-  display: inline-flex;
-  align-items: baseline;
+  display: inline;
   font-weight: 600;
-}
-
-.email-at::before {
-  content: "@";
+  white-space: nowrap;
 }
 
 .footer-bottom {
