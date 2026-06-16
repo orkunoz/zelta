@@ -1439,14 +1439,27 @@ h1 span {
 }
 
 .portfolio-concept-visual {
+  position: relative;
   display: grid;
   aspect-ratio: 16 / 9;
   padding: 24px;
+  overflow: hidden;
   place-items: center;
   border-bottom: 1px solid #e4e3eb;
 }
 
+.portfolio-concept-visual img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .portfolio-concept-visual span {
+  position: relative;
+  z-index: 1;
   padding: 8px 12px;
   border: 1px solid rgba(255, 255, 255, 0.55);
   border-radius: 999px;
@@ -1467,6 +1480,13 @@ h1 span {
   background:
     linear-gradient(135deg, transparent 44%, rgba(255, 255, 255, 0.13) 44% 56%, transparent 56%),
     linear-gradient(135deg, #191923, #5b55d6);
+}
+
+.portfolio-concept-barber::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(180deg, rgba(14, 14, 18, 0.08), rgba(14, 14, 18, 0.18));
 }
 
 .portfolio-concept-beauty {
