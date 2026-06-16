@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A multilingual restaurant website concept by Zelta with menu, opening hours, location and reservation sections."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; base-uri 'none'; connect-src 'none'; font-src 'self'; form-action 'none'; frame-src 'none'; img-src 'self' data:; object-src 'none'; script-src 'self'; style-src 'self'; upgrade-insecure-requests"
+    />
+    <meta name="theme-color" content="#f6efe3" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Liora Mediterranean Bistro | Concept by Zelta" />
+    <meta
+      property="og:description"
+      content="Reservation-focused restaurant website concept for local businesses."
+    />
+    <meta property="og:url" content="https://zelta.pl/demo/restaurant/" />
+    <meta property="og:image" content="https://zelta.pl/assets/zelta-social-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Liora Mediterranean Bistro | Concept by Zelta" />
+    <meta
+      name="twitter:description"
+      content="Reservation-focused restaurant website concept for local businesses."
+    />
+    <link rel="canonical" href="https://zelta.pl/demo/restaurant/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png" />
+    <link
+      rel="preload"
+      href="../../assets/fonts/poppins-600.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <title>Liora Mediterranean Bistro | Concept by Zelta</title>
+    <link rel="stylesheet" href="restaurant.css?v=20260616-1" />
+    <script src="restaurant.js?v=20260616-1" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Main navigation" data-i18n-aria-label="navLabel">
+        <a class="brand" href="#hero" aria-label="Liora Mediterranean Bistro">
+          <span class="brand-mark" aria-hidden="true">L</span>
+          <span>
+            <strong>Liora</strong>
+            <small data-i18n="brandSub">Concept by Zelta</small>
+          </span>
+        </a>
+
+        <div class="nav-links" id="nav-links">
+          <a href="#menu" data-i18n="navMenu">Menu</a>
+          <a href="#story" data-i18n="navStory">Story</a>
+          <a href="#visit" data-i18n="navVisit">Visit</a>
+        </div>
+
+        <div class="nav-actions">
+          <div class="language-switch" aria-label="Language" data-i18n-aria-label="languageLabel">
+            <button class="lang-btn active" type="button" data-lang="en" lang="en" aria-pressed="true">EN</button>
+            <button class="lang-btn" type="button" data-lang="pl" lang="pl" aria-pressed="false">PL</button>
+            <button class="lang-btn" type="button" data-lang="tr" lang="tr" aria-pressed="false">TR</button>
+          </div>
+          <a class="nav-book" href="#reserve" data-i18n="navReserve">Reserve</a>
+          <button
+            class="menu-button"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="nav-links"
+            aria-expanded="false"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="hero">
+        <div class="hero-media" aria-hidden="true">
+          <div class="plate plate-main"></div>
+          <div class="plate plate-small"></div>
+          <div class="table-lines"></div>
+        </div>
+        <div class="shell hero-content">
+          <p class="eyebrow" data-i18n="heroEyebrow">Mediterranean bistro concept</p>
+          <h1>Liora</h1>
+          <p data-i18n="heroCopy">
+            Seasonal plates, warm service and simple table reservations for a local restaurant that
+            wants guests to act from the first screen.
+          </p>
+          <div class="hero-actions" id="reserve">
+            <a class="button button-primary" href="#booking" data-i18n="reserveCta">Reserve a table</a>
+            <a class="button button-secondary" href="#menu" data-i18n="menuCta">View menu</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="menu">
+        <div class="shell menu-layout">
+          <aside class="menu-intro">
+            <p class="eyebrow" data-i18n="menuKicker">Menu</p>
+            <h2 data-i18n="menuTitle">A short menu guests can scan in seconds.</h2>
+            <p data-i18n="menuCopy">
+              For restaurants, the website should make the menu, hours, location and reservation path
+              obvious without making visitors hunt.
+            </p>
+          </aside>
+
+          <div class="menu-board">
+            <div class="menu-group">
+              <div class="menu-group-header">
+                <h3 data-i18n="startersTitle">Starters</h3>
+                <span data-i18n="startersTime">Served all day</span>
+              </div>
+              <article class="dish-row">
+                <span class="dish-thumb dish-olive" aria-hidden="true"></span>
+                <div>
+                  <h4 data-i18n="dish1Title">Charred aubergine</h4>
+                  <p data-i18n="dish1Copy">Tahini, herbs, lemon oil and warm flatbread.</p>
+                </div>
+                <strong>34 PLN</strong>
+              </article>
+              <article class="dish-row">
+                <span class="dish-thumb dish-tomato" aria-hidden="true"></span>
+                <div>
+                  <h4 data-i18n="dish2Title">Burrata & tomato</h4>
+                  <p data-i18n="dish2Copy">Creamy burrata, basil, roasted tomato and sea salt.</p>
+                </div>
+                <strong>42 PLN</strong>
+              </article>
+            </div>
+
+            <div class="menu-group">
+              <div class="menu-group-header">
+                <h3 data-i18n="mainsTitle">Mains</h3>
+                <span data-i18n="mainsTime">Lunch & dinner</span>
+              </div>
+              <article class="dish-row">
+                <span class="dish-thumb dish-pasta" aria-hidden="true"></span>
+                <div>
+                  <h4 data-i18n="dish3Title">Lemon seafood pasta</h4>
+                  <p data-i18n="dish3Copy">Prawns, white wine, parsley and fresh linguine.</p>
+                </div>
+                <strong>68 PLN</strong>
+              </article>
+              <article class="dish-row">
+                <span class="dish-thumb dish-fish" aria-hidden="true"></span>
+                <div>
+                  <h4 data-i18n="dish4Title">Grilled sea bass</h4>
+                  <p data-i18n="dish4Copy">Fennel salad, olive tapenade and herb potatoes.</p>
+                </div>
+                <strong>76 PLN</strong>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-section" id="story">
+        <div class="shell story-grid">
+          <div class="story-image" aria-hidden="true">
+            <span data-i18n="storyImage">Open kitchen</span>
+          </div>
+          <div class="story-copy">
+            <p class="eyebrow" data-i18n="storyKicker">Story</p>
+            <h2 data-i18n="storyTitle">A neighborhood place for slow meals and easy decisions.</h2>
+            <p data-i18n="storyCopy">
+              The page keeps the restaurant personality visible while making the practical details
+              easy to reach: today&apos;s menu, table booking, hours and directions.
+            </p>
+            <div class="story-points">
+              <div><span>01</span><strong data-i18n="point1">Menu built for mobile browsing</strong></div>
+              <div><span>02</span><strong data-i18n="point2">Reservation and phone CTAs always close</strong></div>
+              <div><span>03</span><strong data-i18n="point3">Google Maps ready for local discovery</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="visit-section" id="visit">
+        <div class="shell visit-grid">
+          <div class="visit-panel">
+            <p class="eyebrow" data-i18n="visitKicker">Visit</p>
+            <h2 data-i18n="visitTitle">Reserve, call or find the table.</h2>
+            <div class="hours-list">
+              <div><span data-i18n="weekday">Mon - Thu</span><strong>12:00 - 22:00</strong></div>
+              <div><span data-i18n="weekend">Fri - Sun</span><strong>12:00 - 23:30</strong></div>
+              <div><span data-i18n="address">Warsaw, Mokotow</span><strong data-i18n="addressNote">Concept location</strong></div>
+            </div>
+          </div>
+
+          <form class="reservation-card" id="booking" aria-label="Reservation form" data-i18n-aria-label="bookingLabel">
+            <h3 data-i18n="bookingTitle">Reservation table</h3>
+            <label>
+              <span data-i18n="formName">Name</span>
+              <input type="text" value="Anna Kowalska" autocomplete="name" />
+            </label>
+            <div class="form-row">
+              <label>
+                <span data-i18n="formGuests">Guests</span>
+                <input type="number" value="2" min="1" max="12" />
+              </label>
+              <label>
+                <span data-i18n="formTime">Time</span>
+                <input type="time" value="19:30" />
+              </label>
+            </div>
+            <a class="button button-primary" href="tel:+48123456789" data-i18n="bookingCta">Call to reserve</a>
+            <a class="map-link" href="https://maps.google.com/" target="_blank" rel="noopener nofollow" data-i18n="mapCta">Open Google Maps</a>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer shell">
+      <a href="../../" data-i18n="backToZelta">Back to Zelta</a>
+      <span data-i18n="footerNote">Demo website concept by Zelta Digital Solutions.</span>
+    </footer>
+  </body>
+</html>

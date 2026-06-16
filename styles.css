@@ -1489,6 +1489,14 @@ h1 span {
   background: linear-gradient(180deg, rgba(14, 14, 18, 0.08), rgba(14, 14, 18, 0.18));
 }
 
+.portfolio-concept-restaurant {
+  background:
+    radial-gradient(circle at 74% 38%, rgba(255, 248, 234, 0.9) 0 13%, transparent 14%),
+    radial-gradient(circle at 62% 52%, rgba(185, 77, 55, 0.9) 0 8%, transparent 9%),
+    radial-gradient(circle at 80% 56%, rgba(82, 97, 66, 0.9) 0 9%, transparent 10%),
+    linear-gradient(135deg, #526142, #c49350 58%, #b94d37);
+}
+
 .portfolio-concept-beauty {
   background:
     radial-gradient(circle at 22% 25%, rgba(255, 255, 255, 0.55), transparent 22%),
