@@ -350,11 +350,21 @@ h3 {
   overflow: hidden;
   min-height: 520px;
   border: 1px solid rgba(244, 234, 216, 0.14);
-  background:
-    linear-gradient(145deg, rgba(11, 10, 8, 0.18), rgba(11, 10, 8, 0.78)),
-    radial-gradient(circle at 55% 35%, rgba(231, 189, 120, 0.32), transparent 22%),
-    linear-gradient(135deg, #332820, #11100e 68%);
+  background: linear-gradient(135deg, #332820, #11100e 68%);
   box-shadow: var(--shadow);
+}
+
+.photo-window img,
+.studio-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-window img {
+  filter: saturate(0.82) brightness(0.72);
 }
 
 .photo-window::before,
@@ -379,7 +389,7 @@ h3 {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background: rgba(124, 63, 36, 0.42);
+  background: rgba(124, 63, 36, 0.28);
   filter: blur(16px);
 }
 
@@ -562,11 +572,11 @@ h3 {
   position: relative;
   min-height: 620px;
   overflow: hidden;
-  background:
-    linear-gradient(135deg, rgba(11, 10, 8, 0.2), rgba(11, 10, 8, 0.72)),
-    repeating-linear-gradient(90deg, transparent 0 26px, rgba(231, 189, 120, 0.08) 26px 28px),
-    radial-gradient(circle at 60% 30%, rgba(201, 133, 60, 0.52), transparent 28%),
-    #201a14;
+  background: #201a14;
+}
+
+.studio-image img {
+  filter: saturate(0.8) brightness(0.72);
 }
 
 .studio-image::before {
@@ -574,30 +584,37 @@ h3 {
   inset: 28px;
   content: "";
   border: 1px solid rgba(244, 234, 216, 0.18);
+  z-index: 1;
+}
+
+.studio-image::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+    linear-gradient(135deg, rgba(11, 10, 8, 0.08), rgba(11, 10, 8, 0.74)),
+    radial-gradient(circle at 60% 30%, rgba(201, 133, 60, 0.28), transparent 28%);
+  z-index: 1;
 }
 
 .studio-image span {
   position: absolute;
   right: 36px;
   bottom: 36px;
+  z-index: 2;
   color: var(--paper);
   font-size: 13px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
-.studio-copy .eyebrow,
-.pricing-section .eyebrow {
+.studio-copy .eyebrow {
   color: var(--rust);
-}
-
-.studio-copy p {
-  color: #6d5f4d;
 }
 
 .feature-list {
   display: grid;
-  margin-top: 36px;
+  margin-top: 18px;
   gap: 12px;
 }
 
@@ -619,38 +636,6 @@ h3 {
 
 .feature-list strong {
   font-size: 18px;
-}
-
-.pricing-grid {
-  display: grid;
-  grid-template-columns: 0.78fr 1fr;
-  gap: 70px;
-  align-items: start;
-}
-
-.price-board {
-  border: 1px solid var(--line);
-}
-
-.price-board div {
-  display: flex;
-  min-height: 78px;
-  padding: 0 26px;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--line);
-}
-
-.price-board div:last-child {
-  border-bottom: 0;
-}
-
-.price-board span {
-  color: var(--paper-soft);
-}
-
-.price-board strong {
-  color: var(--amber-light);
 }
 
 .contact-section {
@@ -707,8 +692,7 @@ h3 {
 
 @media (prefers-reduced-motion: no-preference) {
   .service-row,
-  .feature-list div,
-  .price-board div {
+  .feature-list div {
     opacity: 0;
     transform: translateY(18px);
     transition:
@@ -717,8 +701,7 @@ h3 {
   }
 
   .service-row.is-visible,
-  .feature-list div.is-visible,
-  .price-board div.is-visible {
+  .feature-list div.is-visible {
     opacity: 1;
     transform: translateY(0);
   }
@@ -772,7 +755,6 @@ h3 {
   .hero-grid,
   .split-heading,
   .studio-grid,
-  .pricing-grid,
   .contact-grid {
     grid-template-columns: 1fr;
   }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="A multilingual barber shop website concept by Zelta with Booksy-focused booking, services, pricing and local trust sections."
+      content="A multilingual barber shop website concept by Zelta with Booksy-focused booking, service menus and local trust sections."
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -39,8 +39,10 @@
       crossorigin
     />
     <title>Noir & Co. Barber Studio | Concept by Zelta</title>
-    <link rel="stylesheet" href="barber.css?v=20260616-2" />
-    <script src="barber.js?v=20260616-2" defer></script>
+    <link rel="preload" href="assets/barber-hero.jpg" as="image" />
+    <link rel="preload" href="assets/barber-studio.jpg" as="image" />
+    <link rel="stylesheet" href="barber.css?v=20260616-3" />
+    <script src="barber.js?v=20260616-3" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
@@ -58,7 +60,6 @@
         <div class="nav-links" id="nav-links">
           <a href="#services" data-i18n="navServices">Services</a>
           <a href="#studio" data-i18n="navStudio">Studio</a>
-          <a href="#pricing" data-i18n="navPricing">Pricing</a>
           <a href="#contact" data-i18n="navContact">Contact</a>
         </div>
 
@@ -112,6 +113,7 @@
 
           <div class="hero-visual" aria-hidden="true">
             <div class="photo-window photo-window-large">
+              <img src="assets/barber-hero.jpg" alt="" loading="eager" decoding="async" />
               <span>01</span>
               <strong data-i18n="visualCut">Signature fade</strong>
             </div>
@@ -179,15 +181,12 @@
       <section class="section studio-section" id="studio">
         <div class="shell studio-grid">
           <div class="studio-image" aria-hidden="true">
+            <img src="assets/barber-studio.jpg" alt="" loading="lazy" decoding="async" />
             <span data-i18n="studioImage">Interior concept</span>
           </div>
           <div class="studio-copy">
             <p class="eyebrow" data-i18n="studioKicker">Studio</p>
             <h2 data-i18n="studioTitle">A darker brand style for a sharper local presence.</h2>
-            <p data-i18n="studioCopy">
-              The page gives the barber shop a premium visual language without hiding the practical
-              details customers need: services, prices, hours and booking.
-            </p>
             <div class="feature-list">
               <div>
                 <span>01</span>
@@ -202,21 +201,6 @@
                 <strong data-i18n="feature3">Mobile-first service menu</strong>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section pricing-section" id="pricing">
-        <div class="shell pricing-grid">
-          <div>
-            <p class="eyebrow" data-i18n="pricingKicker">Pricing</p>
-            <h2 data-i18n="pricingTitle">A price board that feels like part of the brand.</h2>
-          </div>
-          <div class="price-board">
-            <div><span data-i18n="price1Name">Skin fade</span><strong>90 PLN</strong></div>
-            <div><span data-i18n="price2Name">Classic cut</span><strong>75 PLN</strong></div>
-            <div><span data-i18n="price3Name">Beard trim</span><strong>55 PLN</strong></div>
-            <div><span data-i18n="price4Name">Cut + beard</span><strong>130 PLN</strong></div>
           </div>
         </div>
       </section>

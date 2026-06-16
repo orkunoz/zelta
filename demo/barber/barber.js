@@ -6,7 +6,6 @@ const translations = {
     brandSub: "Concept by Zelta",
     navServices: "Services",
     navStudio: "Studio",
-    navPricing: "Pricing",
     navContact: "Contact",
     navBook: "Book now",
     heroEyebrow: "Warsaw barber concept",
@@ -34,17 +33,9 @@ const translations = {
     studioImage: "Interior concept",
     studioKicker: "Studio",
     studioTitle: "A darker brand style for a sharper local presence.",
-    studioCopy:
-      "The page gives the barber shop a premium visual language without hiding the practical details customers need: services, prices, hours and booking.",
     feature1: "Booksy-first booking flow",
     feature2: "WhatsApp and phone shortcuts",
     feature3: "Mobile-first service menu",
-    pricingKicker: "Pricing",
-    pricingTitle: "A price board that feels like part of the brand.",
-    price1Name: "Skin fade",
-    price2Name: "Classic cut",
-    price3Name: "Beard trim",
-    price4Name: "Cut + beard",
     hoursKicker: "Opening hours",
     hoursWeek: "Mon - Fri",
     hoursSat: "Saturday",
@@ -67,7 +58,6 @@ const translations = {
     brandSub: "Concept by Zelta",
     navServices: "Usługi",
     navStudio: "Studio",
-    navPricing: "Cennik",
     navContact: "Kontakt",
     navBook: "Rezerwuj",
     heroEyebrow: "Koncept barbershopu w Warszawie",
@@ -95,17 +85,9 @@ const translations = {
     studioImage: "Koncept wnętrza",
     studioKicker: "Studio",
     studioTitle: "Ciemniejszy styl marki dla mocniejszej lokalnej obecności.",
-    studioCopy:
-      "Strona daje barbershopowi premium język wizualny, ale nie ukrywa praktycznych informacji: usług, cen, godzin i rezerwacji.",
     feature1: "Rezerwacja oparta o Booksy",
     feature2: "Skróty do WhatsApp i telefonu",
     feature3: "Mobilne menu usług",
-    pricingKicker: "Cennik",
-    pricingTitle: "Cennik, który wygląda jak część marki.",
-    price1Name: "Skin fade",
-    price2Name: "Klasyczne cięcie",
-    price3Name: "Trymowanie brody",
-    price4Name: "Włosy + broda",
     hoursKicker: "Godziny otwarcia",
     hoursWeek: "Pon - Pt",
     hoursSat: "Sobota",
@@ -128,7 +110,6 @@ const translations = {
     brandSub: "Concept by Zelta",
     navServices: "Hizmetler",
     navStudio: "Stüdyo",
-    navPricing: "Fiyatlar",
     navContact: "İletişim",
     navBook: "Randevu al",
     heroEyebrow: "Varsova berber konsepti",
@@ -156,17 +137,9 @@ const translations = {
     studioImage: "İç mekan konsepti",
     studioKicker: "Stüdyo",
     studioTitle: "Daha güçlü yerel görünürlük için koyu ve keskin marka stili.",
-    studioCopy:
-      "Sayfa berber dükkanına premium bir görsel dil verir, ama müşterinin ihtiyacı olan hizmet, fiyat, saat ve randevu bilgilerini saklamaz.",
     feature1: "Booksy odaklı randevu akışı",
     feature2: "WhatsApp ve telefon kısayolları",
     feature3: "Mobil öncelikli hizmet menüsü",
-    pricingKicker: "Fiyatlar",
-    pricingTitle: "Markanın parçası gibi duran fiyat panosu.",
-    price1Name: "Skin fade",
-    price2Name: "Klasik kesim",
-    price3Name: "Sakal düzeltme",
-    price4Name: "Saç + sakal",
     hoursKicker: "Çalışma saatleri",
     hoursWeek: "Pzt - Cum",
     hoursSat: "Cumartesi",
@@ -264,7 +237,7 @@ samePageLinks.forEach((link) => {
   });
 });
 
-const revealElements = document.querySelectorAll(".service-row, .feature-list div, .price-board div");
+const revealElements = document.querySelectorAll(".service-row, .feature-list div");
 
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver(
