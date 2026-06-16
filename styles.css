@@ -1434,6 +1434,10 @@ h1 span {
   background: #fff;
 }
 
+.portfolio-demo-link {
+  display: block;
+}
+
 .portfolio-concept-visual {
   display: grid;
   aspect-ratio: 16 / 9;
@@ -1452,6 +1456,11 @@ h1 span {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   backdrop-filter: blur(6px);
+}
+
+.portfolio-demo-link:hover .portfolio-concept-visual span {
+  border-color: white;
+  background: rgba(255, 255, 255, 0.22);
 }
 
 .portfolio-concept-barber {

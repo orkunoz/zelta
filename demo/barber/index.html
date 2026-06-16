@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A multilingual barber shop website concept by Zelta with Booksy-focused booking, services, pricing and local trust sections."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; base-uri 'none'; connect-src 'none'; font-src 'self'; form-action 'none'; frame-src 'none'; img-src 'self' data:; object-src 'none'; script-src 'self'; style-src 'self'; upgrade-insecure-requests"
+    />
+    <meta name="theme-color" content="#11100d" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Noir & Co. Barber Studio | Concept by Zelta" />
+    <meta
+      property="og:description"
+      content="Booking-focused barber website concept for local businesses."
+    />
+    <meta property="og:url" content="https://zelta.pl/demo/barber/" />
+    <meta property="og:image" content="https://zelta.pl/assets/zelta-social-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Noir & Co. Barber Studio | Concept by Zelta" />
+    <meta
+      name="twitter:description"
+      content="Booking-focused barber website concept for local businesses."
+    />
+    <link rel="canonical" href="https://zelta.pl/demo/barber/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png" />
+    <link
+      rel="preload"
+      href="../../assets/fonts/poppins-600.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <title>Noir & Co. Barber Studio | Concept by Zelta</title>
+    <link rel="stylesheet" href="barber.css?v=20260616-1" />
+    <script src="barber.js?v=20260616-1" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Main navigation" data-i18n-aria-label="navLabel">
+        <a class="brand" href="#hero" aria-label="Noir and Co. Barber Studio">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span>
+            <strong>Noir & Co.</strong>
+            <small data-i18n="brandSub">Concept by Zelta</small>
+          </span>
+        </a>
+
+        <div class="nav-links" id="nav-links">
+          <a href="#services" data-i18n="navServices">Services</a>
+          <a href="#barbers" data-i18n="navBarbers">Barbers</a>
+          <a href="#pricing" data-i18n="navPricing">Pricing</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <div class="language-switch" aria-label="Language" data-i18n-aria-label="languageLabel">
+            <button class="lang-btn active" type="button" data-lang="en" lang="en" aria-pressed="true">EN</button>
+            <button class="lang-btn" type="button" data-lang="pl" lang="pl" aria-pressed="false">PL</button>
+            <button class="lang-btn" type="button" data-lang="tr" lang="tr" aria-pressed="false">TR</button>
+          </div>
+          <a class="nav-book" href="#booking" data-i18n="navBook">Book</a>
+          <button
+            class="menu-button"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="nav-links"
+            aria-expanded="false"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero shell" id="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">Modern barber studio</p>
+          <h1 data-i18n="heroTitle">Sharp cuts. Clean fades. Book in seconds.</h1>
+          <p data-i18n="heroCopy">
+            A booking-focused barber website concept for local shops that want to turn mobile visitors
+            into appointments.
+          </p>
+          <div class="hero-actions" id="booking">
+            <a
+              class="button button-primary"
+              href="https://booksy.com/en-pl/"
+              target="_blank"
+              rel="noopener nofollow"
+              data-i18n="booksyCta"
+            >Book on Booksy</a>
+            <a
+              class="button button-secondary"
+              href="https://wa.me/48123456789"
+              target="_blank"
+              rel="noopener nofollow"
+              data-i18n="whatsappCta"
+            >Message on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-hidden="true">
+          <div class="portrait-card">
+            <span></span>
+            <strong>NOIR</strong>
+          </div>
+          <div class="availability-card">
+            <span data-i18n="today">Today</span>
+            <strong>12:30</strong>
+            <small data-i18n="availableSlot">next available slot</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip shell" aria-label="Studio highlights">
+        <div><strong>4.9</strong><span data-i18n="proofRating">average rating</span></div>
+        <div><strong>35 min</strong><span data-i18n="proofCut">classic cut</span></div>
+        <div><strong>Booksy</strong><span data-i18n="proofBooking">booking ready</span></div>
+      </section>
+
+      <section class="section shell" id="services">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="servicesKicker">Services</p>
+          <h2 data-i18n="servicesTitle">Built around the treatments people actually search for</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <span>01</span>
+            <h3 data-i18n="service1Title">Skin fade</h3>
+            <p data-i18n="service1Copy">Clean gradient, detailed finish and neckline styling.</p>
+          </article>
+          <article class="service-card">
+            <span>02</span>
+            <h3 data-i18n="service2Title">Classic cut</h3>
+            <p data-i18n="service2Copy">Everyday haircut shaped around face, hair type and routine.</p>
+          </article>
+          <article class="service-card">
+            <span>03</span>
+            <h3 data-i18n="service3Title">Beard trim</h3>
+            <p data-i18n="service3Copy">Shape, line-up and finish for a sharper profile.</p>
+          </article>
+          <article class="service-card">
+            <span>04</span>
+            <h3 data-i18n="service4Title">Cut + beard</h3>
+            <p data-i18n="service4Copy">The full appointment for a complete refresh.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section look-section" id="barbers">
+        <div class="shell look-grid">
+          <div>
+            <p class="eyebrow" data-i18n="barbersKicker">The studio</p>
+            <h2 data-i18n="barbersTitle">A premium feel without making booking complicated</h2>
+            <p data-i18n="barbersCopy">
+              The page keeps the brand sharp, the menu simple and the booking button visible from the
+              first screen to the final contact section.
+            </p>
+          </div>
+          <div class="barber-cards">
+            <article>
+              <span>01</span>
+              <strong data-i18n="barber1">Fade specialist</strong>
+            </article>
+            <article>
+              <span>02</span>
+              <strong data-i18n="barber2">Beard detailer</strong>
+            </article>
+            <article>
+              <span>03</span>
+              <strong data-i18n="barber3">Classic cuts</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell" id="pricing">
+        <div class="section-heading centered">
+          <p class="eyebrow" data-i18n="pricingKicker">Pricing</p>
+          <h2 data-i18n="pricingTitle">Simple menu, fast decisions</h2>
+        </div>
+        <div class="price-list">
+          <div><span data-i18n="price1Name">Skin fade</span><strong>90 PLN</strong></div>
+          <div><span data-i18n="price2Name">Classic cut</span><strong>75 PLN</strong></div>
+          <div><span data-i18n="price3Name">Beard trim</span><strong>55 PLN</strong></div>
+          <div><span data-i18n="price4Name">Cut + beard</span><strong>130 PLN</strong></div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="shell contact-card">
+          <div>
+            <p class="eyebrow" data-i18n="contactKicker">Contact</p>
+            <h2 data-i18n="contactTitle">Ready for your next cut?</h2>
+            <p data-i18n="contactCopy">
+              In a real client build, these buttons would point to the shop's Booksy profile,
+              WhatsApp and phone number.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a
+              class="button button-primary"
+              href="https://booksy.com/en-pl/"
+              target="_blank"
+              rel="noopener nofollow"
+              data-i18n="booksyCta"
+            >Book on Booksy</a>
+            <a class="button button-secondary" href="tel:+48123456789" data-i18n="callCta">Call the studio</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer shell">
+      <a href="../../" data-i18n="backToZelta">Back to Zelta</a>
+      <span data-i18n="footerNote">Demo website concept by Zelta Digital Solutions.</span>
+    </footer>
+  </body>
+</html>
