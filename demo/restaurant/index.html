@@ -39,8 +39,9 @@
       crossorigin
     />
     <title>Liora Mediterranean Bistro | Concept by Zelta</title>
-    <link rel="stylesheet" href="restaurant.css?v=20260617-1" />
-    <script src="restaurant.js?v=20260617-1" defer></script>
+    <link rel="preload" href="assets/restaurant-hero.jpg" as="image" />
+    <link rel="stylesheet" href="restaurant.css?v=20260617-2" />
+    <script src="restaurant.js?v=20260617-2" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
@@ -84,9 +85,7 @@
     <main id="main">
       <section class="hero" id="hero">
         <div class="hero-media" aria-hidden="true">
-          <div class="plate plate-main"></div>
-          <div class="plate plate-small"></div>
-          <div class="table-lines"></div>
+          <img src="assets/restaurant-hero.jpg" alt="" loading="eager" decoding="async" />
         </div>
         <div class="shell hero-content">
           <p class="eyebrow" data-i18n="heroEyebrow">Mediterranean bistro concept</p>
@@ -106,10 +105,10 @@
         <div class="shell menu-layout">
           <aside class="menu-intro">
             <p class="eyebrow" data-i18n="menuKicker">Menu</p>
-            <h2 data-i18n="menuTitle">A short menu guests can scan in seconds.</h2>
+            <h2 data-i18n="menuTitle">Fresh plates, bright flavors, made for sharing.</h2>
             <p data-i18n="menuCopy">
-              For restaurants, the website should make the menu, hours, location and reservation path
-              obvious without making visitors hunt.
+              Our menu follows the season: grilled seafood, handmade pasta, warm flatbread and
+              vegetables served with olive oil, herbs and lemon.
             </p>
           </aside>
 
@@ -166,6 +165,7 @@
       <section class="story-section" id="story">
         <div class="shell story-grid">
           <div class="story-image" aria-hidden="true">
+            <img src="assets/restaurant-story.jpg" alt="" loading="lazy" decoding="async" />
           </div>
           <div class="story-copy">
             <p class="eyebrow" data-i18n="storyKicker">Story</p>
@@ -199,19 +199,26 @@
             <h3 data-i18n="bookingTitle">Reservation table</h3>
             <label>
               <span data-i18n="formName">Name</span>
-              <input type="text" value="Anna Kowalska" autocomplete="name" />
+              <input id="reservation-name" type="text" value="Anna Kowalska" autocomplete="name" />
             </label>
             <div class="form-row">
               <label>
                 <span data-i18n="formGuests">Guests</span>
-                <input type="number" value="2" min="1" max="12" />
+                <input id="reservation-guests" type="number" value="2" min="1" max="12" />
               </label>
               <label>
                 <span data-i18n="formTime">Time</span>
-                <input type="time" value="19:30" />
+                <input id="reservation-time" type="time" value="19:30" />
               </label>
             </div>
-            <a class="button button-primary" href="tel:+48123456789" data-i18n="bookingCta">Call to reserve</a>
+            <a
+              class="button button-primary"
+              id="whatsapp-reservation"
+              href="https://wa.me/48123456789"
+              target="_blank"
+              rel="noopener nofollow"
+              data-i18n="bookingCta"
+            >Reserve on WhatsApp</a>
             <a class="map-link" href="https://maps.google.com/" target="_blank" rel="noopener nofollow" data-i18n="mapCta">Open Google Maps</a>
           </form>
         </div>

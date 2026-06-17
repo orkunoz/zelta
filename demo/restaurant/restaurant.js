@@ -14,9 +14,9 @@ const translations = {
     reserveCta: "Reserve a table",
     menuCta: "View menu",
     menuKicker: "Menu",
-    menuTitle: "A short menu guests can scan in seconds.",
+    menuTitle: "Fresh plates, bright flavors, made for sharing.",
     menuCopy:
-      "For restaurants, the website should make the menu, hours, location and reservation path obvious without making visitors hunt.",
+      "Our menu follows the season: grilled seafood, handmade pasta, warm flatbread and vegetables served with olive oil, herbs and lemon.",
     startersTitle: "Starters",
     startersTime: "Served all day",
     dish1Title: "Charred aubergine",
@@ -47,7 +47,7 @@ const translations = {
     formName: "Name",
     formGuests: "Guests",
     formTime: "Time",
-    bookingCta: "Call to reserve",
+    bookingCta: "Reserve on WhatsApp",
     mapCta: "Open Google Maps",
     backToZelta: "Back to Zelta",
     footerNote: "Demo website concept by Zelta Digital Solutions.",
@@ -69,9 +69,9 @@ const translations = {
     reserveCta: "Zarezerwuj stolik",
     menuCta: "Zobacz menu",
     menuKicker: "Menu",
-    menuTitle: "Krotkie menu, ktore goscie skanuja w kilka sekund.",
+    menuTitle: "Swieze talerze, jasne smaki i dania do dzielenia.",
     menuCopy:
-      "W restauracji strona powinna od razu pokazac menu, godziny, lokalizacje i rezerwacje bez szukania.",
+      "Menu zmienia sie z porami roku: grillowane owoce morza, reczny makaron, cieply flatbread i warzywa z oliwa, ziolami i cytryna.",
     startersTitle: "Przystawki",
     startersTime: "Dostepne caly dzien",
     dish1Title: "Opalany baklazan",
@@ -102,7 +102,7 @@ const translations = {
     formName: "Imie",
     formGuests: "Goscie",
     formTime: "Godzina",
-    bookingCta: "Zadzwon i zarezerwuj",
+    bookingCta: "Rezerwuj przez WhatsApp",
     mapCta: "Otworz Google Maps",
     backToZelta: "Wroc do Zelta",
     footerNote: "Koncepcja strony demonstracyjnej od Zelta Digital Solutions.",
@@ -124,9 +124,9 @@ const translations = {
     reserveCta: "Masa ayirt",
     menuCta: "Menuyu gor",
     menuKicker: "Menu",
-    menuTitle: "Misafirlerin saniyeler icinde tarayabildigi kisa menu.",
+    menuTitle: "Taze tabaklar, parlak tatlar ve paylasmalik yemekler.",
     menuCopy:
-      "Restoran sitesinde menu, saatler, konum ve rezervasyon yolu hemen gorunur olmalidir.",
+      "Menu mevsime gore sekillenir: izgara deniz urunleri, el yapimi makarna, sicak flatbread ve zeytinyagi, otlar ve limonla servis edilen sebzeler.",
     startersTitle: "Baslangiclar",
     startersTime: "Tum gun servis",
     dish1Title: "Kozlenmis patlican",
@@ -157,7 +157,7 @@ const translations = {
     formName: "Isim",
     formGuests: "Kisi",
     formTime: "Saat",
-    bookingCta: "Arayarak ayirt",
+    bookingCta: "WhatsApp ile ayirt",
     mapCta: "Google Maps'i ac",
     backToZelta: "Zelta'ya don",
     footerNote: "Zelta Digital Solutions tarafindan demo web sitesi konsepti.",
@@ -172,6 +172,11 @@ const translatedAriaElements = document.querySelectorAll("[data-i18n-aria-label]
 const menuButton = document.querySelector(".menu-button");
 const navLinks = document.querySelector(".nav-links");
 const samePageLinks = document.querySelectorAll('a[href^="#"]');
+const reservationName = document.querySelector("#reservation-name");
+const reservationGuests = document.querySelector("#reservation-guests");
+const reservationTime = document.querySelector("#reservation-time");
+const whatsappReservation = document.querySelector("#whatsapp-reservation");
+const whatsappPhone = "48123456789";
 
 function setLanguage(language) {
   const safeLanguage = translations[language] ? language : "en";
@@ -212,8 +217,23 @@ function cleanAddressBar() {
   history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
 }
 
+function updateWhatsAppReservationLink() {
+  if (!whatsappReservation) return;
+
+  const name = reservationName?.value.trim() || "Guest";
+  const guests = reservationGuests?.value || "2";
+  const time = reservationTime?.value || "19:30";
+  const message = `Hello Liora, I would like to reserve a table. Name: ${name}. Guests: ${guests}. Time: ${time}.`;
+  whatsappReservation.href = `https://wa.me/${whatsappPhone}?text=${encodeURIComponent(message)}`;
+}
+
 languageButtons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
+});
+
+[reservationName, reservationGuests, reservationTime].forEach((input) => {
+  input?.addEventListener("input", updateWhatsAppReservationLink);
+  input?.addEventListener("change", updateWhatsAppReservationLink);
 });
 
 menuButton.addEventListener("click", () => {
@@ -253,3 +273,4 @@ try {
   storedLanguage = "en";
 }
 setLanguage(storedLanguage);
+updateWhatsAppReservationLink();
