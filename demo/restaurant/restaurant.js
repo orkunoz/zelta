@@ -33,9 +33,6 @@ const translations = {
     storyTitle: "A neighborhood place for slow meals and easy decisions.",
     storyCopy:
       "Liora is a fictional Mediterranean bistro built around small plates, grilled seafood and long evenings at the table. The concept is warm, local and easy to book.",
-    point1: "Menu built for mobile browsing",
-    point2: "Reservation and phone CTAs always close",
-    point3: "Google Maps ready for local discovery",
     visitKicker: "Visit",
     visitTitle: "Reserve, call or find the table.",
     weekday: "Mon - Thu",
@@ -88,9 +85,6 @@ const translations = {
     storyTitle: "Sasiedzkie miejsce na spokojne jedzenie i latwe decyzje.",
     storyCopy:
       "Liora to fikcyjne bistro srodziemnomorskie oparte na malych talerzach, grillowanych owocach morza i dlugich wieczorach przy stole. Koncept jest cieply, lokalny i latwy do rezerwacji.",
-    point1: "Menu przygotowane pod telefon",
-    point2: "Rezerwacja i telefon zawsze blisko",
-    point3: "Gotowe pod odkrywanie w Google Maps",
     visitKicker: "Wizyta",
     visitTitle: "Zarezerwuj, zadzwon albo znajdz stolik.",
     weekday: "Pon - Czw",
@@ -143,9 +137,6 @@ const translations = {
     storyTitle: "Yavas yemekler ve kolay kararlar icin mahalle mekani.",
     storyCopy:
       "Liora; kucuk tabaklar, izgara deniz urunleri ve masada uzun aksamlar uzerine kurulu kurgusal bir Akdeniz bistrosudur. Konsept sicak, yerel ve kolay rezervasyon odaklidir.",
-    point1: "Mobil tarama icin hazir menu",
-    point2: "Rezervasyon ve telefon CTA'lari yakinda",
-    point3: "Google Maps kesfi icin hazir",
     visitKicker: "Ziyaret",
     visitTitle: "Rezervasyon yap, ara ya da masayi bul.",
     weekday: "Pzt - Per",
