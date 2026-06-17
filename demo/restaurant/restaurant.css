@@ -203,6 +203,10 @@ input {
   display: none;
 }
 
+.menu-button span {
+  display: block;
+}
+
 .hero {
   position: relative;
   min-height: 760px;
@@ -357,8 +361,7 @@ h2 {
 }
 
 .menu-intro {
-  position: sticky;
-  top: 120px;
+  position: static;
 }
 
 .menu-intro .eyebrow,
@@ -470,16 +473,6 @@ h2 {
     radial-gradient(circle at 68% 70%, #526142 0 9%, transparent 10%),
     linear-gradient(135deg, #2b291f, #8d6d44);
   box-shadow: var(--shadow);
-}
-
-.story-image span {
-  position: absolute;
-  right: 28px;
-  bottom: 28px;
-  color: var(--cream);
-  font-size: 12px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
 }
 
 .story-copy p {
