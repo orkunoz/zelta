@@ -6,7 +6,7 @@ const translations = {
     brandSub: "Concept by Zelta",
     navMenu: "Menu",
     navStory: "Story",
-    navVisit: "Visit",
+    navVisit: "Contact",
     navReserve: "Reserve",
     heroEyebrow: "Mediterranean bistro concept",
     heroCopy:
@@ -33,7 +33,7 @@ const translations = {
     storyTitle: "A neighborhood place for slow meals and easy decisions.",
     storyCopy:
       "Liora is a fictional Mediterranean bistro built around small plates, grilled seafood and long evenings at the table. The concept is warm, local and easy to book.",
-    visitKicker: "Visit",
+    visitKicker: "Contact",
     visitTitle: "Reserve, call or find the table.",
     weekday: "Mon - Thu",
     weekend: "Fri - Sun",
@@ -58,7 +58,7 @@ const translations = {
     brandSub: "Concept by Zelta",
     navMenu: "Menu",
     navStory: "Historia",
-    navVisit: "Wizyta",
+    navVisit: "Kontakt",
     navReserve: "Rezerwuj",
     heroEyebrow: "Koncept bistro srodziemnomorskiego",
     heroCopy:
@@ -85,7 +85,7 @@ const translations = {
     storyTitle: "Sasiedzkie miejsce na spokojne jedzenie i latwe decyzje.",
     storyCopy:
       "Liora to fikcyjne bistro srodziemnomorskie oparte na malych talerzach, grillowanych owocach morza i dlugich wieczorach przy stole. Koncept jest cieply, lokalny i latwy do rezerwacji.",
-    visitKicker: "Wizyta",
+    visitKicker: "Kontakt",
     visitTitle: "Zarezerwuj, zadzwon albo znajdz stolik.",
     weekday: "Pon - Czw",
     weekend: "Pt - Nd",
@@ -110,7 +110,7 @@ const translations = {
     brandSub: "Concept by Zelta",
     navMenu: "Menu",
     navStory: "Hikaye",
-    navVisit: "Ziyaret",
+    navVisit: "Iletisim",
     navReserve: "Rezervasyon",
     heroEyebrow: "Akdeniz bistro konsepti",
     heroCopy:
@@ -137,7 +137,7 @@ const translations = {
     storyTitle: "Yavas yemekler ve kolay kararlar icin mahalle mekani.",
     storyCopy:
       "Liora; kucuk tabaklar, izgara deniz urunleri ve masada uzun aksamlar uzerine kurulu kurgusal bir Akdeniz bistrosudur. Konsept sicak, yerel ve kolay rezervasyon odaklidir.",
-    visitKicker: "Ziyaret",
+    visitKicker: "Iletisim",
     visitTitle: "Rezervasyon yap, ara ya da masayi bul.",
     weekday: "Pzt - Per",
     weekend: "Cum - Paz",
