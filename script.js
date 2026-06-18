@@ -167,7 +167,7 @@ const translations = {
     formNote: "Your enquiry is securely processed by Formspree so we can reply.",
     privacyLink: "Privacy notice",
     footerTagline: "Websites, advertising and digital support for local businesses in Poland.",
-    footerPrivacy: "No tracking cookies or analytics."
+    footerPrivacy: "Privacy-conscious analytics enabled."
   },
   pl: {
     skip: "Przejdź do treści",
@@ -337,7 +337,7 @@ const translations = {
     formNote: "Zapytanie jest bezpiecznie przetwarzane przez Formspree, abyśmy mogli odpowiedzieć.",
     privacyLink: "Informacja o prywatności",
     footerTagline: "Strony internetowe, reklama i wsparcie cyfrowe dla lokalnych firm w Polsce.",
-    footerPrivacy: "Bez cookies śledzących i analityki."
+    footerPrivacy: "Analityka z uwzględnieniem prywatności."
   },
   tr: {
     skip: "İçeriğe geç",
@@ -533,7 +533,7 @@ const translations = {
     formNote: "Talebiniz, yanıt verebilmemiz için Formspree tarafından güvenli biçimde işlenir.",
     privacyLink: "Gizlilik bildirimi",
     footerTagline: "Polonya'daki yerel işletmeler için web sitesi, reklam ve dijital destek.",
-    footerPrivacy: "İzleme çerezi veya analitik yok."
+    footerPrivacy: "Gizliliğe duyarlı analitik etkin."
   }
 };
 
